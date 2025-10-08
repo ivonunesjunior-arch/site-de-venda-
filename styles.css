@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #614b4b;
     color: #333;
 }
 
 header {
     background-color: #007bff; /* Azul vibrante */
-    color: white;
+    color: rgb(107, 62, 62);
     padding: 1em 2em;
     display: flex;
     justify-content: space-between;
