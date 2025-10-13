@@ -3,42 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BikeShop - Sua Loja de Bicicletas</title>
+    <title>MotorX - Sua Concessionária Online</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1>BikeShop</h1>
+        <h1>MotorX</h1>
+        <p>Acelere Seus Sonhos</p>
         <nav>
-            <a href="#produtos">Produtos</a>
-            <a href="#contato">Contato</a>
-            <div id="carrinho-info">Carrinho (0)</div>
+            <a href="#">Modelos</a>
+            <a href="#">Financiamento</a>
+            <a href="#">Contato</a>
         </nav>
     </header>
 
-    <main id="produtos">
-        <h2>Nossas Bicicletas</h2>
-        
-        <div class="produto" data-id="1" data-nome="Mountain X9" data-preco="1500.00">
-            <img src="bicicleta-gios-4trix-aro-26-branca-e-roxa-com-freio-a-disco-hidraulico-shimano-completo-67f3d38f2a460.jpg" alt="Bicicleta Mountain X9">
-            <h3>Mountain X9</h3>
-            <p class="descricao">Perfeita para trilhas e terrenos acidentados.</p>
-            <p class="preco">R$ 1.500,00</p>
-            <button class="add-carrinho">Adicionar ao Carrinho</button>
-        </div>
+    <main class="catalogo">
+        <section class="moto-card">
+            <img src="moto-esportiva.jpg" alt="Moto Esportiva"> <h2>Speed Fire 1000cc</h2>
+            <p class="categoria">Esportiva</p>
+            <p>Velocidade e tecnologia em duas rodas. Ideal para pistas e estradas.</p>
+            <span class="preco">R$ 65.000,00</span>
+            <button class="saber-mais" data-modelo="Speed Fire">Ver Detalhes</button>
+        </section>
 
-        <div class="produto" data-id="2" data-nome="Speed Racer G1" data-preco="2200.00">
-            <img src="img_9119-zn7r37vcnk.JPG" alt="Bicicleta Speed Racer G1">
-            <h3>Speed Racer G1</h3>
-            <p class="descricao">Leve e aerodinâmica para o asfalto.</p>
-            <p class="preco">R$ 2.200,00</p>
-            <button class="add-carrinho">Adicionar ao Carrinho</button>
-        </div>
+        <section class="moto-card">
+            <img src="moto-urbana.jpg" alt="Moto Urbana"> <h2>City Pro 150cc</h2>
+            <p class="categoria">Urbana / Street</p>
+            <p>Economia e agilidade para o trânsito do dia a dia na cidade.</p>
+            <span class="preco">R$ 15.500,00</span>
+            <button class="saber-mais" data-modelo="City Pro">Ver Detalhes</button>
+        </section>
 
         </main>
 
     <footer>
-        <p>&copy; 2025 BikeShop</p>
+        <p>MotorX &copy; 2025. Vrum Vrum.</p>
     </footer>
 
     <script src="script.js"></script>

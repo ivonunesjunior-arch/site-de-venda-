@@ -1,30 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let contagemCarrinho = 0;
-    const infoCarrinho = document.getElementById('carrinho-info');
-    const botoesAdicionar = document.querySelectorAll('.add-carrinho');
+    // Seleciona todos os botões de "Ver Detalhes"
+    const botoesDetalhes = document.querySelectorAll('.saber-mais');
 
-    // Função para atualizar o número no cabeçalho
-    function atualizarCarrinho() {
-        infoCarrinho.textContent = `Carrinho (${contagemCarrinho})`;
-    }
-
-    // Adiciona um evento de clique para cada botão "Adicionar ao Carrinho"
-    botoesAdicionar.forEach(botao => {
-        botao.addEventListener('click', (event) => {
-            contagemCarrinho++; // Aumenta a contagem
-            atualizarCarrinho(); // Atualiza a exibição
-
-            // Opcional: Mostra qual produto foi adicionado
-            const produtoElement = event.target.closest('.produto');
-            const nomeProduto = produtoElement.dataset.nome;
-            alert(`${nomeProduto} adicionada(o) ao carrinho! Total: ${contagemCarrinho}`);
+    // Adiciona um evento de clique a cada botão
+    botoesDetalhes.forEach(botao => {
+        botao.addEventListener('click', (evento) => {
+            // Pega o nome do modelo de moto do atributo 'data-modelo'
+            const modelo = evento.target.dataset.modelo;
             
-            // Aqui você adicionaria a lógica mais complexa: 
-            // - Salvar o item no LocalStorage ou em um Array
-            // - Calcular o valor total
+            // Simulação de navegação ou exibição de modal de detalhes
+            console.log(`Usuário clicou para ver detalhes do modelo: ${modelo}`);
+            
+            // Alerta simples para demonstrar a interatividade
+            alert(`Você escolheu o modelo ${modelo}! Em um site real, você seria levado para uma página de detalhes completa.`);
+
+            // Em um sistema real, aqui você faria uma requisição para carregar 
+            // a página ou um modal com as especificações completas da moto.
         });
     });
-
-    // Inicializa a contagem ao carregar a página
-    atualizarCarrinho();
 });
